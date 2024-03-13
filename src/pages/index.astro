@@ -1,26 +1,16 @@
 ---
 import "../style/style.css";
-import Card from "../components/Card.astro";
-import Navigation from "../components/Navigation.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+// import Card from "../components/Card.astro";
+// import Navigation from "../components/Navigation.astro";
 import Button from "../components/Button.astro";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
-  </head>
-  <body>
-    <Navigation />
-    <h1>Astro</h1>
-    <main>
-      <Button variant="primary" size="small">TEXT</Button>
-      <Button variant="secondary" size="medium">TEXT</Button>
-      <Button variant="secondary" size="large">TEXT</Button>
-      <!-- <Card header="Hej Verden">
+<MainLayout title="Hjem">
+  <Button variant="primary" size="small">TEXT</Button>
+  <Button variant="secondary" size="medium">TEXT</Button>
+  <Button variant="secondary" size="large">TEXT</Button>
+  <!-- <Card header="Hej Verden">
         <p>Hej Med Dig</p>
         <button>Klik her</button>
       </Card>
@@ -28,6 +18,4 @@ import Button from "../components/Button.astro";
         <button>Klik her</button>
         <p>Hej Med Jer</p>
       </Card> -->
-    </main>
-  </body>
-</html>
+</MainLayout>
